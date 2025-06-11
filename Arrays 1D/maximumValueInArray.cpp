@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5], b;
+    cout<<"Enter the numbers: ";
+    for(int i=0; i<5; i++){
+        cin>>a[i];
+    }
+    int c=a[0];
+    for(int i=0; i<5; i++){
+        b=a[i];
+        if(b>c){
+            c=b;
+        }
+    }
+    cout<<"The greatest no. from the array is: "<<c;
+}
